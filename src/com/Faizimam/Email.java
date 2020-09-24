@@ -49,7 +49,7 @@ public class Email {
         else{return "Thanku For Visiting";}
     }
     //to generate a random password
-    private String randomPassword(int length){
+    private String randomPassword(int Defaultlength){
         String passwordSet="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$&";
         char[] password =new char[length];
         for(int i=0;i<length;i++){
@@ -71,7 +71,7 @@ public class Email {
         this.mailBoxCapacity=mailBoxCapacity;
     }
   public String getAlternateEmail(){return alternateEmail;}
-  public String getPassword(int length){return password;}
+  public String getPassword(){return password;}
   public int getMailBoxCapacity(){return mailBoxCapacity;}
 
   public String showInfo(){
